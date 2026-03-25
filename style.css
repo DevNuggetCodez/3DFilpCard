@@ -1,0 +1,40 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  box-shadow: 1px 3px 3px black;
+  position: relative;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.back,
+.front {
+  position: absolute;
+  top: 0;
+}
+
+.back {
+  display: none;
+}
+
+.card:hover .back {
+  display: block;
+  transform: rotateY(180deg);
+  right: 0;
+}
+
+.card:hover .front {
+  display: none;
+}
+
